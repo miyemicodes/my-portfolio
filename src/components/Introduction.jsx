@@ -3,9 +3,32 @@ import React from "react";
 function Introduction(){
 
 return(
-  <div className="port-details">
-     <h1>Alright</h1>
+
+<div className="port-intro">
+  <div className="port-info">
+
+  <h1>Godfrey Elizabeth</h1>
+  <h2>Frontend Developer</h2>
+  <p>
+    I build Responsive,pixel perfect and highly functional websites.
+  </p>
+
   </div>
+  <div className="port-Nav">
+
+  </div>
+  <div className="port-Socials">
+    <ul>
+      <li>
+        <a href="https://github.com/miyemicodes">
+        <i class="fa-brands fa-github">github</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+  
 )
 
 }
