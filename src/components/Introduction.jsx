@@ -7,7 +7,7 @@ return(
 <div className="port-intro">
   <div className="port-info">
 
-  <h1>Godfrey Elizabeth</h1>
+  <h1 >Godfrey Elizabeth</h1>
   <h2>Frontend Developer</h2>
   <p>
     I build Responsive,pixel perfect and highly functional websites.
@@ -21,7 +21,7 @@ return(
     <ul>
       <li>
         <a href="https://github.com/miyemicodes">
-        <i class="fa-brands fa-github">github</i>
+        <i>github</i>
         </a>
       </li>
     </ul>

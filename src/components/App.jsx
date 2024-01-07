@@ -1,6 +1,6 @@
 import React from "react";
 import Details from "./Details";
-import Introduction from "./Introduction";
+import Introduction from "./introduction";
 
 function App() {
   return (
