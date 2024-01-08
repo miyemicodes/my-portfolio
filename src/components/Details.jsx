@@ -12,9 +12,9 @@ return (
 
   <About/>
 
-  <Skills/>
-
   <Experience/>
+
+  <Skills/>
  
   <Education/>
 
