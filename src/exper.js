@@ -1,4 +1,4 @@
-const Experience = [
+const myExperience = [
   {
     id: 1,
     duration: "Nov - Dec 2023",
@@ -22,3 +22,5 @@ const Experience = [
     description:" Over the course of my career, I have worked as a Front End Web Developer, showcasing expertise in transforming diverse design formats like PSD, XD, Sketch, and FIGMA into HTML, CSS, Tailwind CSS and Bootstrap. I possess a strong command of HTML5, CSS3, Bootstrap, Tailwind CSS, JavaScript, and React JS. I am proud of my proficiency in developing responsive web templates, mobile templates, User friendly websites and engaging in front-end development using a variety of front-end technologies."
   }
 ]
+
+export default myExperience;
