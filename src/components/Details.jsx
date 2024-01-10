@@ -1,9 +1,9 @@
 import React from "react";
 import About from "./About";
-import Skills from "./skills";
-import Education from "./education";
-import Experience from "./experience";
-import Projects from "./projects";
+import Skills from "./Skills";
+import Education from "./Education";
+import Experience from "./Experience";
+import Projects from "./Projects";
 
 function Details(){
  

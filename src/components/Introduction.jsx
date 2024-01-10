@@ -1,6 +1,6 @@
 import React from "react";
-import Socials from "./socials";
-import Nav from "./portfolio-nav";
+import Socials from "./Socials";
+import Nav from "./Portfolio-nav";
 
 
 function Introduction(){
