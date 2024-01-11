@@ -1,6 +1,8 @@
 const images = [
   {
     id: 1,
-    projectna
+    projectname: "Tourest",
+    description: "A website for our tourists to showcase our wonderful landscape and hospitality.",
+    img: "../public/assets/01.png"
   },
 ]

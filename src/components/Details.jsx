@@ -39,7 +39,8 @@ function createWorkDetails(experienceDetails){
 function Details(){
  
 return ( 
-  <div className="port-details">
+
+  <div className="port-details lg:flex-1 px-20 overflow-y-auto overflow-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
 
   <About/>
 
@@ -52,15 +53,17 @@ return (
   <div>
     <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">SKILLS</h2>
   
-    <div className="skills-list">
+    <div className="skills-list flex gap-4 flex-wrap" >
 
        {mySkills.map(createSkillsDetails)}
      </div>
   </div>
+
+  <Projects/>
  
   <Education/>
 
-  <Projects/>
+  
 
   </div>
 
