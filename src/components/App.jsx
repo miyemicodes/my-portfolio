@@ -5,11 +5,11 @@ import Introduction from "./Introduction";
 
 function App() {
   return (
-    <div className="w-screen min-h-screen flex align-items-center justify-items-center bg-slate-800 lg:h-64 "  >
-      <div className=" sm:flex flex-col my-10 mx-15 lg:flex-row ">
+    <div className="w-screen min-h-screen flex align-items-center justify-items-center bg-slate-800 lg:h-64 px-20"  >
+      <div className=" sm:flex flex-col m lg:flex-row ">
         <Introduction/>
         <Details/>
-        </div>
+      </div>
       
     </div>
 

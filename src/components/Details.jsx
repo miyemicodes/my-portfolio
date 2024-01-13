@@ -5,6 +5,7 @@ import Education from "./education";
 import Experience from "./experience";
 import Projects from "./projects";
 import myExperience from "../exper";
+import images from "../assets";
 import mySkills from "../techSkills";
 
 
@@ -32,41 +33,60 @@ function createWorkDetails(experienceDetails){
       />
 
     );
-
 }
+
+function createProjectDetails(projectDetails){
+  return (
+    <Projects
+       id = {projectDetails.id}
+       key = {projectDetails.id}
+       projectname = {projectDetails.projectname}
+       description = {projectDetails.description}
+       img = {projectDetails.img}
+    />
+  );
+}
+
+
 
 
 function Details(){
  
-return ( 
+return (
+  <div
+    className="port-details lg:flex-1 px-10 overflow-y-auto overflow-hidden remove-scrollbar {
+    "
+  >
+    <About />
 
-  <div className="port-details lg:flex-1 px-20 overflow-y-auto overflow-hidden scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
-
-  <About/>
-
-  <div>
-    <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">EXPERIENCE</h2>
+    <div>
+      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
+        EXPERIENCE
+      </h2>
       {myExperience.map(createWorkDetails)}
+    </div>
+
+    <div>
+      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
+        SKILLS
+      </h2>
+
+      <div className="skills-list flex gap-4 flex-wrap">
+        {mySkills.map(createSkillsDetails)}
+      </div>
+    </div>
+
+    <Education />
+
+    <div className="w-full">
+      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
+        PROJECTS
+      </h2>
+      <div className="flex flex-col gap-6">
+        {images.map(createProjectDetails)}
+      </div>
+    </div>
   </div>
-
-
-  <div>
-    <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">SKILLS</h2>
-  
-    <div className="skills-list flex gap-4 flex-wrap" >
-
-       {mySkills.map(createSkillsDetails)}
-     </div>
-  </div>
-
-  <Projects/>
- 
-  <Education/>
-
-  
-
-  </div>
-
 );
 
 }
