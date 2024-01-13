@@ -8,87 +8,77 @@ import myExperience from "../exper";
 import images from "../assets";
 import mySkills from "../techSkills";
 
-
-function createSkillsDetails(skillsDetails){
-  return(
+function createSkillsDetails(skillsDetails) {
+  return (
     <Skills
-      id = {skillsDetails.id}
-      key = {skillsDetails.id}
-      expertise = {skillsDetails.expertise}
+      id={skillsDetails.id}
+      key={skillsDetails.id}
+      expertise={skillsDetails.expertise}
     />
-
   );
 }
 
-
-function createWorkDetails(experienceDetails){
-    return(
-      <Experience
-        id = {experienceDetails.id}
-        key = {experienceDetails.id}
-        duration = {experienceDetails.duration}
-        role = {experienceDetails.role}
-        organization = {experienceDetails.organization}
-        description = {experienceDetails.description}
-      />
-
-    );
+function createWorkDetails(experienceDetails) {
+  return (
+    <Experience
+      id={experienceDetails.id}
+      key={experienceDetails.id}
+      duration={experienceDetails.duration}
+      role={experienceDetails.role}
+      organization={experienceDetails.organization}
+      description={experienceDetails.description}
+    />
+  );
 }
 
-function createProjectDetails(projectDetails){
+function createProjectDetails(projectDetails) {
   return (
     <Projects
-       id = {projectDetails.id}
-       key = {projectDetails.id}
-       projectname = {projectDetails.projectname}
-       description = {projectDetails.description}
-       img = {projectDetails.img}
+      id={projectDetails.id}
+      key={projectDetails.id}
+      projectname={projectDetails.projectname}
+      description={projectDetails.description}
+      img={projectDetails.img}
     />
   );
 }
 
+function Details() {
+  return (
+    <div
+      className="port-details lg:flex-1 px-10 overflow-y-auto overflow-hidden remove-scrollbar"
+    >
+      <About />
 
+      <div className="relative" id="experience">
+        <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
+          EXPERIENCE
+        </h2>
+        {myExperience.map(createWorkDetails)}
+      </div>
 
+      <div className="relative" id="skill">
+        <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
+          SKILLS
+        </h2>
 
-function Details(){
- 
-return (
-  <div
-    className="port-details lg:flex-1 px-10 overflow-y-auto overflow-hidden remove-scrollbar {
-    "
-  >
-    <About />
+        <div className="skills-list flex gap-4 flex-wrap">
+          {mySkills.map(createSkillsDetails)}
+        </div>
+      </div>
 
-    <div>
-      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
-        EXPERIENCE
-      </h2>
-      {myExperience.map(createWorkDetails)}
-    </div>
+      <Education />
 
-    <div>
-      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
-        SKILLS
-      </h2>
-
-      <div className="skills-list flex gap-4 flex-wrap">
-        {mySkills.map(createSkillsDetails)}
+      <div className="w-full relative"  id="project">
+        <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
+          PROJECTS
+        </h2>
+        <div className="flex flex-col gap-6">
+          {images.map(createProjectDetails)}
+        </div>
       </div>
     </div>
-
-    <Education />
-
-    <div className="w-full">
-      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
-        PROJECTS
-      </h2>
-      <div className="flex flex-col gap-6">
-        {images.map(createProjectDetails)}
-      </div>
-    </div>
-  </div>
-);
-
+  );
 }
 
 export default Details;
