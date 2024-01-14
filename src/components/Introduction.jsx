@@ -4,7 +4,7 @@ import Nav from "./portfolio-nav";
 
 function Introduction() {
   return (
-    <div className="flex flex-col align-center justify-between">
+    <div className="flex flex-col align-center justify-between px-6 py-12 md:px-12 md:py-20">
       <div className="flex flex-col gap-3">
         <h1 className="text-5xl font-bold tracking-wide text-slate-200">
           Godfrey Elizabeth

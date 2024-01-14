@@ -16,19 +16,19 @@ function Socials() {
         </li>
 
         <li className="text-2xl">
-          <a href="https://github.com/miyemicodes">
+          <a href="https://www.instagram.com/oritsemiyemi?igsh=OHA0djU2NDczZXZv">
             <FaInstagram />
           </a>
         </li>
 
         <li className="text-2xl">
-          <a href="https://github.com/miyemicodes">
+          <a href="https://x.com/Elizabe85838502?t=zXG_nKWUzPrbMBV2G0nddw&s=35">
             <FaXTwitter />
           </a>
         </li>
 
         <li className="text-2xl">
-          <a href="https://github.com/miyemicodes">
+          <a href="https://www.linkedin.com/in/elizabeth-godfrey-180a11199?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <FaLinkedin />
           </a>
         </li>

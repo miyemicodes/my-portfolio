@@ -2,9 +2,9 @@ import React from "react";
 
 function Projects(props) {
   return (
-    <div className="flex flex-col lg:flex-row-reverse gap-7">
+    <div className="flex flex-col-reverse lg:flex-row-reverse gap-7 opacity-75 hover:opacity-100 hover:shadow-lg shadow-cyan-500/50 ">
       <div>
-        <p className="text-base text-slate-200">{props.projectname}</p>
+        <p className="text-lg text-slate-400">{props.projectname}</p>
         <p className="text-sm text-slate-300"> {props.description} </p>
       </div>
 
