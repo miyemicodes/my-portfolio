@@ -4,11 +4,9 @@ import Introduction from "./Introduction";
 
 function App() {
   return (
-    <div className="w-screen min-h-screen flex align-items-center justify-items-center bg-slate-800 lg:h-64 px-20">
-      <div className=" sm:flex flex-col m lg:flex-row ">
-        <Introduction />
-        <Details />
-      </div>
+    <div className="w-screen md:h-screen grid grid-cols-1 md:grid-cols-2 bg-slate-800 px-10">
+      <Introduction />
+      <Details />
     </div>
   );
 }

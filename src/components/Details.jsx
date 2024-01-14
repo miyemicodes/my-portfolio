@@ -45,16 +45,16 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
-    <div
-      className="port-details lg:flex-1 px-10 overflow-y-auto overflow-hidden remove-scrollbar"
-    >
+    <div className="overflow-y-auto overflow-hidden remove-scrollbar">
       <About />
 
       <div className="relative" id="experience">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
           EXPERIENCE
         </h2>
-        {myExperience.map(createWorkDetails)}
+        <div className="flex flex-col gap-6">
+          {myExperience.map(createWorkDetails)}
+        </div>
       </div>
 
       <div className="relative" id="skill">
@@ -69,7 +69,7 @@ function Details() {
 
       <Education />
 
-      <div className="w-full relative"  id="project">
+      <div className="w-full relative" id="project">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
           PROJECTS
         </h2>

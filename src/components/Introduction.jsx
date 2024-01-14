@@ -4,8 +4,8 @@ import Nav from "./portfolio-nav";
 
 function Introduction() {
   return (
-    <div className="port-intro flex flex-1 flex-col align-center justify-between px-10 py-10">
-      <div className="port-info flex flex-col gap-3">
+    <div className="flex flex-col align-center justify-between">
+      <div className="flex flex-col gap-3">
         <h1 className="text-5xl font-bold tracking-wide text-slate-200">
           Godfrey Elizabeth
         </h1>
