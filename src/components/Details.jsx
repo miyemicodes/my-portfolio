@@ -45,7 +45,7 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
-    <div className="overflow-y-auto overflow-hidden remove-scrollbar">
+    <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar">
       <About />
 
       <div className="relative" id="experience">
