@@ -29,7 +29,7 @@ const images = [
     id: 4,
     projectname: "Dashboard",
     description:
-      "This user-friendly interface provides a centralized space for quick insights into key e-commerce metrics, including sales performance, order status, and inventory levels. With a clean and intuitive design, this dashboard empowers online retailers to effortlessly monitor their store's health, track customer activity, and make data-driven decisions. Its responsive layout ensures accessibility across devices, offering a seamless experience for merchants seeking a comprehensive overview of their Shopify store's performance. Explore the simplicity and power of this Shopify Dashboard, a valuable tool for enhancing the management and growth of your e-commerce venture.",
+      "This user-friendly interface provides a centralized space for quick insights into key e-commerce metrics, including sales performance, order status, and inventory levels. Its responsive layout ensures accessibility across devices, offering a seamless experience for merchants seeking a comprehensive overview of their Shopify store's performance.",
     img: asset005,
   },
 ];
