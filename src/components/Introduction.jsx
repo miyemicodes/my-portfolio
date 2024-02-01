@@ -6,7 +6,7 @@ function Introduction() {
   return (
     <div className="flex flex-col align-center justify-between px-6 py-12 md:px-12 md:py-20">
       <div className="flex flex-col gap-3">
-        <h1 className="text-5xl font-bold tracking-wide text-slate-200">
+        <h1 className="text-5xl font-bold tracking-wide text-cyan-200">
           Godfrey Elizabeth
         </h1>
         <h2 className="text-xl font-bold text-slate-300">Frontend Developer</h2>

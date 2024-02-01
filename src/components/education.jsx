@@ -1,13 +1,12 @@
 import React from "react";
 
-function Education() {
+function Education(props) {
   return (
-    <div id="education">
-      <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
-        EDUCATION
-      </h2>
-
-      <div></div>
+    <div>
+      <p className="text-xl text-cyan-200">{props.Academy} </p>
+      <p className="text-lg text-slate-300"> {props.course} </p>
+      <p className="text-sm text-slate-200"> {props.period} </p>
+      <p className="text-sm text-slate-200"> {props.degree} </p>
     </div>
   );
 }

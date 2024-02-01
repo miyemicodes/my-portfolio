@@ -7,6 +7,7 @@ import Projects from "./projects";
 import myExperience from "../exper";
 import images from "../assets";
 import mySkills from "../techSkills";
+import Studies from "../Education";
 
 function createSkillsDetails(skillsDetails) {
   return (
@@ -14,6 +15,19 @@ function createSkillsDetails(skillsDetails) {
       id={skillsDetails.id}
       key={skillsDetails.id}
       expertise={skillsDetails.expertise}
+    />
+  );
+}
+
+function createStudiesDetails(studiesDetails) {
+  return (
+    <Education
+      id={studiesDetails.id}
+      key={studiesDetails.id}
+      Academy={studiesDetails.Academy}
+      course={studiesDetails.course}
+      period={studiesDetails.period}
+      degree={studiesDetails.degree}
     />
   );
 }
@@ -45,10 +59,8 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
-    
     <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar">
       <About />
-
       <div className="relative" id="experience">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
           EXPERIENCE
@@ -57,7 +69,6 @@ function Details() {
           {myExperience.map(createWorkDetails)}
         </div>
       </div>
-
       <div className="relative" id="skill">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
           SKILLS
@@ -68,7 +79,14 @@ function Details() {
         </div>
       </div>
 
-      <Education />
+      <div id="education">
+        <h2 className="py-10 text-base font-bold tracking-wide text-slate-600 ">
+          EDUCATION
+        </h2>
+        <div className="flex flex-col gap-6 ">
+          {Studies.map(createStudiesDetails)}
+        </div>
+      </div>
 
       <div className="w-full relative" id="project">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
