@@ -45,6 +45,7 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
+    
     <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar">
       <About />
 
@@ -52,7 +53,7 @@ function Details() {
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
           EXPERIENCE
         </h2>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 ">
           {myExperience.map(createWorkDetails)}
         </div>
       </div>
