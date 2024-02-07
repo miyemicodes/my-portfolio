@@ -8,6 +8,7 @@ import myExperience from "../exper";
 import images from "../assets";
 import mySkills from "../techSkills";
 import Studies from "../Education";
+import Input from "./input";
 
 function createSkillsDetails(skillsDetails) {
   return (
@@ -59,7 +60,7 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
-    <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar">
+    <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar pb-8">
       <About />
       <div className="relative" id="experience">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
@@ -96,6 +97,9 @@ function Details() {
           {images.map(createProjectDetails)}
         </div>
       </div>
+
+      <Input/>
+
     </div>
   );
 }
