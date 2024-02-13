@@ -6,7 +6,7 @@ function About() {
       <h2 className="sticky top-0 py-7 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
         ABOUT
       </h2>
-      <p className="text-lg text-slate-400">
+      <p className="text-lg text-slate-400 cursor-pointer">
         A skilled Software Developer with experience in the industry. While my
         expertise is primarily in frontend development, I have a track record of
         delivering cutting-edge systems for small and intermediate enterprises
