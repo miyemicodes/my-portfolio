@@ -8,7 +8,7 @@ import myExperience from "../exper";
 import images from "../assets";
 import mySkills from "../techSkills";
 import Studies from "../Education";
-import Input from "./input";
+import Getintouch from "./Getintouch";
 
 function createSkillsDetails(skillsDetails) {
   return (
@@ -98,7 +98,7 @@ function Details() {
         </div>
       </div>
 
-      <Input />
+      <Getintouch />
     </div>
   );
 }

@@ -15,7 +15,7 @@ function About() {
         performance-driven approach.
         <br />
         When I'm not coding ,I do love to read novels , watch Movies , Listen to
-        music , sleeping and playing Games.
+        music.
       </p>
     </section>
   );

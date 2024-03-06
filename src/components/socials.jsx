@@ -8,7 +8,7 @@ import { FaMediumM } from "react-icons/fa";
 function Socials() {
   return (
     <div className="port-Socials">
-      <ul className="flex gap-3 text-slate-400 ">
+      <ul className="flex gap-3 text-slate-400">
         <li className="text-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-112 hover:text-slate-200 duration-300">
           <a href="https://github.com/miyemicodes">
             <FaGithub />
