@@ -10,8 +10,8 @@ const Studies = [
     id: 2,
     Academy: "Udemy Full stack development course",
     course: "Software Development",
-    period: "Feb 2023 - Present",
-    degree: "To be awarded on completion",
+    period: "Feb 2023 - Mar 2024",
+    degree: "Certificate of Completion",
   },
 ];
 

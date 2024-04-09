@@ -60,7 +60,7 @@ function createProjectDetails(projectDetails) {
 
 function Details() {
   return (
-    <div className=" px-8 overflow-y-auto overflow-hidden remove-scrollbar pb-8">
+    <div className=" px-8 overflow-y-auto overflow-hidden scroll-smooth remove-scrollbar pb-8">
       <About />
       <div className="relative" id="experience">
         <h2 className="sticky top-0 py-4 text-base font-bold tracking-wide text-slate-600 backdrop-blur">
