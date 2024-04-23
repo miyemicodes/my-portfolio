@@ -14,7 +14,7 @@ function About() {
         proficiency extends to projects with a creative ,responsive and
         performance-driven approach.
         <br />
-        When I'm not coding ,I do love to read novels , watch Movies , Listen to
+        When I'm not coding ,I do love to read novels, Engage in Research, Listen to
         music.
       </p>
     </section>
