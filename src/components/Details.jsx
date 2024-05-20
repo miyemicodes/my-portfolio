@@ -54,6 +54,7 @@ function createProjectDetails(projectDetails) {
       projectname={projectDetails.projectname}
       description={projectDetails.description}
       img={projectDetails.img}
+      websiteLinks={projectDetails.websiteLinks}
     />
   );
 }
